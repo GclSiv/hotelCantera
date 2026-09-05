@@ -1,36 +1,11 @@
-import type { FAQItem } from '@/types/hotel'
+// src/data/faq.ts
+import type { FAQItem } from '../types/hotel';
 
-/*
-  Preguntas frecuentes. Acordeón con una sola respuesta abierta a la vez (Fase 3).
-  Respuestas de ejemplo, editables según las políticas reales del hotel.
-*/
 export const faqs: FAQItem[] = [
-  {
-    question: '¿A qué hora es el check-in?',
-    answer: 'El check-in está disponible a partir de las 15:00 h.',
-  },
-  {
-    question: '¿A qué hora es el check-out?',
-    answer: 'El check-out es hasta las 12:00 h. Consúltanos por salidas tardías según disponibilidad.',
-  },
-  {
-    question: '¿Cuentan con estacionamiento?',
-    answer: 'Sí, ofrecemos opciones de estacionamiento. Escríbenos para confirmar disponibilidad durante tu estancia.',
-  },
-  {
-    question: '¿El desayuno está incluido?',
-    answer: 'Contamos con desayuno oaxaqueño. La inclusión depende de la tarifa reservada; verifica al momento de reservar.',
-  },
-  {
-    question: '¿Aceptan mascotas?',
-    answer: 'Consúltanos previamente: evaluamos cada caso para garantizar el confort de todos nuestros huéspedes.',
-  },
-  {
-    question: '¿Puedo modificar mi reservación?',
-    answer: 'Sí, las modificaciones están sujetas a disponibilidad y a la política de la tarifa. Contáctanos con anticipación.',
-  },
-  {
-    question: '¿Tienen habitaciones familiares?',
-    answer: 'La Habitación Doble Queen es ideal para grupos pequeños. Escríbenos para armar la mejor opción para tu familia.',
-  },
-]
+  { id: 1, question: '¿Cuál es el horario de check-in y check-out?', answer: 'El ingreso (check-in) es a las 3:00 p.m. y la salida (check-out) es a las 12:00 p.m. Las solicitudes fuera de horario están sujetas a disponibilidad y pueden generar cargos.' },
+  { id: 2, question: '¿Tienen estacionamiento en el hotel?', answer: 'Sí, contamos con estacionamiento propio y seguro sin costo adicional para todos nuestros huéspedes registrados.' },
+  { id: 3, question: '¿El desayuno está incluido en la tarifa?', answer: 'Las tarifas base no incluyen el desayuno. No obstante, ofrecemos paquetes que ya lo integran en nuestra cafetería/restaurante.' },
+  { id: 4, question: '¿Aceptan mascotas?', answer: 'Sí, aceptamos mascotas en el hotel con ciertas limitaciones y bajo un cargo adicional. Te recomendamos contactarnos antes de tu llegada.' },
+  { id: 5, question: '¿Es posible agregar una cama extra en mi habitación?', answer: 'No, por motivos de espacio y para preservar la comodidad de los huéspedes, no se permite la instalación de camas supletorias.' },
+  { id: 6, question: '¿Cómo puedo cancelar o modificar mi reservación?', answer: 'Si reservaste de forma directa, escríbenos a reservaciones@hotelcanterareal.com. Si reservaste por una plataforma externa (Booking, Expedia), debes gestionarlo directamente en ella.' }
+];

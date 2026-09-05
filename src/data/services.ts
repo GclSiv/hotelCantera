@@ -1,56 +1,11 @@
-import type { HotelService } from '@/types/hotel'
+// src/data/services.ts
+import type { HotelService } from '../types/hotel';
 
-/*
-  Servicios y amenidades. El campo 'icon' es un identificador que el componente
-  ServiceItem resolverá a un icono (SVG inline / minimalista) en la Fase 3.
-*/
 export const services: HotelService[] = [
-  {
-    id: 'wifi',
-    icon: 'wifi',
-    title: 'WiFi de alta velocidad',
-    description: 'Conexión estable en todas las áreas del hotel.',
-  },
-  {
-    id: 'desayuno',
-    icon: 'coffee',
-    title: 'Desayuno oaxaqueño',
-    description: 'Sabores locales para comenzar el día.',
-  },
-  {
-    id: 'restaurante',
-    icon: 'utensils',
-    title: 'Restaurante',
-    description: 'Cocina tradicional con identidad regional.',
-  },
-  {
-    id: 'estacionamiento',
-    icon: 'parking',
-    title: 'Estacionamiento',
-    description: 'Comodidad para quienes llegan en auto.',
-  },
-  {
-    id: 'clima',
-    icon: 'snowflake',
-    title: 'Aire acondicionado',
-    description: 'Climatización en todas las habitaciones.',
-  },
-  {
-    id: 'atencion',
-    icon: 'concierge',
-    title: 'Atención personalizada',
-    description: 'Hospitalidad oaxaqueña en cada detalle.',
-  },
-  {
-    id: 'ubicacion',
-    icon: 'map-pin',
-    title: 'Ubicación privilegiada',
-    description: 'A pasos de los principales atractivos.',
-  },
-  {
-    id: 'terraza',
-    icon: 'sun',
-    title: 'Áreas comunes',
-    description: 'Espacios coloniales para descansar y convivir.',
-  },
-]
+  { id: 'wifi', name: 'Wi-Fi de Alta Velocidad', description: 'Conexión inalámbrica veloz en todas las habitaciones y áreas comunes.', iconName: 'wifi' },
+  { id: 'restaurante', name: 'Restaurante del Hotel', description: 'Prueba la gastronomía regional con un sazón tradicional e inolvidable.', iconName: 'utensils' },
+  { id: 'estacionamiento', name: 'Estacionamiento Propio', description: 'Estacionamiento privado gratuito y seguro para todos nuestros huéspedes.', iconName: 'car' },
+  { id: 'climatizacion', name: 'Aire Acondicionado', description: 'Habitaciones perfectamente climatizadas para tu máximo bienestar.', iconName: 'wind' },
+  { id: 'recepcion', name: 'Atención Personalizada', description: 'Atención cálida y profesional para brindarte las mejores recomendaciones locales.', iconName: 'heart' },
+  { id: 'jacuzzi', name: 'Tina de Hidromasaje', description: 'Disfruta de espacios de relajación exclusivos dentro de instalaciones seleccionadas.', iconName: 'sparkles' }
+];

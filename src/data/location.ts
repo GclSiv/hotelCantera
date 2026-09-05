@@ -1,14 +1,12 @@
-import type { NearbyPlace } from '@/types/hotel'
+// src/data/location.ts
+import type { NearbyPlace } from '../types/hotel';
 
-/*
-  Lugares cercanos de interés — sección Ubicación.
-  Distancias y tiempos aproximados desde el Centro Histórico; editables.
-*/
 export const nearbyPlaces: NearbyPlace[] = [
-  { name: 'Templo de Santo Domingo', distance: '400 m', walkingTime: '5 min' },
-  { name: 'Zócalo de Oaxaca', distance: '650 m', walkingTime: '8 min' },
-  { name: 'Andador Turístico Macedonio Alcalá', distance: '300 m', walkingTime: '4 min' },
-  { name: 'Mercado 20 de Noviembre', distance: '800 m', walkingTime: '10 min' },
-  { name: 'Museo de las Culturas de Oaxaca', distance: '450 m', walkingTime: '6 min' },
-  { name: 'Basílica de la Soledad', distance: '1.2 km', walkingTime: '15 min' },
-]
+  { name: 'Paseo El Llano', distance: '600 m', timeWalking: '8 min', category: 'culture' },
+  { name: 'Templo de Santo Domingo de Guzmán', distance: '900 m', timeWalking: '11 min', category: 'culture' },
+  { name: 'Zócalo de Oaxaca', distance: '1.2 km', timeWalking: '15 min', category: 'culture' },
+  { name: 'Mercado Benito Juárez', distance: '1.3 km', timeWalking: '16 min', category: 'culture' },
+  { name: 'Restaurant Olivia', distance: '100 m', timeWalking: '1 min', category: 'dining' },
+  { name: 'Restaurante Bar Las Margaritas', distance: '150 m', timeWalking: '2 min', category: 'dining' },
+  { name: 'Cenaduría Carolina', distance: '350 m', timeWalking: '4 min', category: 'dining' }
+];
