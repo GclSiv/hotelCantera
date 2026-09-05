@@ -6,6 +6,9 @@ export const hotelConfig: HotelConfig = {
   tagline: 'Arquitectura colonial que enamora en cada detalle',
   description: 'Descubre el equilibrio perfecto entre el encanto colonial y el confort moderno en pleno corazón del Centro Histórico de Oaxaca.',
   bookingUrl: 'https://us2.cloudbeds.com/es/reservation/CJb6Cu?currency=mxn',
+  // WhatsApp real del hotel (+52 951 429 6521) con mensaje prellenado.
+  whatsappUrl:
+    'https://wa.me/5219514296521?text=Hola,%20me%20gustar%C3%ADa%20consultar%20disponibilidad%20en%20Hotel%20Cantera%20Real',
   contact: {
     address: 'Libres 404, Col. Centro, Oaxaca de Juárez, Oaxaca, México, C.P. 68000',
     phone: '+52 951 429 6521',

@@ -1,0 +1,28 @@
+feat: secciones de contenido, rediseño editorial y pase de lujo (Fases 5, 5.5 y 6)
+
+Secciones de contenido (Vue 3, <script setup lang="ts">)
+- AboutSection (layout asimétrico, firma del anfitrión, StatItem con contador animado)
+- ServicesSection (retícula de líneas ultrafinas estilo Aquila) + ServiceItem (iconos SVG inline)
+- RoomsSection (filas alternadas de gran formato, tarjeta flotante que invade la foto) + RoomCard
+- PackagesSection (asimétrica, foto real; CTA a WhatsApp, sin precios inventados)
+- ExperienceSection (magazine: número gigante de marca de agua + marco desalineado)
+- GallerySection (masonry) + GalleryLightbox (nativo Vue, flechas + teclado)
+- LocationSection (mapa con marco de arena offset + POI editoriales)
+- TestimoniosSection (slider manual) + TestimonialCard (monograma de iniciales)
+- FaqSection + FAQItem (acordeón grid-rows, una abierta a la vez)
+- CtaSection (CTA final a pantalla con overlay: Reservar + WhatsApp)
+
+Layout y utilidades
+- TheNavbar/TheFooter (newsletter por mailto), ThePreloader, TheWhatsAppButton,
+  TheStickyBooking (barra de reserva móvil), TrustBar (afirmaciones verificables)
+- composables: useScrollReveal (v-reveal, fade-up con stagger) y useMagnetic (v-magnetic)
+- Hero con Ken Burns + parallax; micro-interacciones lentas (500-700ms)
+
+Datos y tipos
+- whatsappUrl real (+52 951 429 6521) y PackageItem en HotelConfig/types
+- src/data/packages.ts y navigation.ts (enlace Paquetes)
+
+Verificado con vue-tsc --noEmit: 0 errores de tipos.
+
+Co-Authored-By: Claude Opus 4.8 <noreply@anthropic.com>
+Claude-Session: https://claude.ai/code/session_018cz4jtiNPTm1FgniQjvv4N

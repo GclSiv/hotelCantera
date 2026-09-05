@@ -19,6 +19,7 @@ export interface HotelConfig {
   tagline: string;
   description: string;
   bookingUrl: string;
+  whatsappUrl: string;
   contact: ContactInfo;
   social: SocialLinks;
   stats: {
@@ -68,6 +69,15 @@ export interface ExperienceItem {
   title: string;
   description: string;
   image: string;
+}
+
+export interface PackageItem {
+  id: string;
+  name: string;
+  subtitle: string;
+  description: string;
+  image: string;
+  includes: string[];
 }
 
 export interface NearbyPlace {

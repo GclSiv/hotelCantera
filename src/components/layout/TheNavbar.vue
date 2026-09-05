@@ -38,7 +38,7 @@ function close() {
           <a
             :href="link.href"
             :class="[
-              'text-xs font-medium uppercase tracking-[0.18em] transition-colors duration-300',
+              'text-xs font-medium uppercase tracking-[0.18em] transition-colors duration-500',
               isScrolled ? 'text-obsidian/70 hover:text-terracota' : 'text-cream/80 hover:text-cream',
             ]"
           >

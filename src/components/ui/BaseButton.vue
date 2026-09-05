@@ -24,7 +24,7 @@ const props = withDefaults(defineProps<Props>(), {
 
 const base =
   'inline-flex items-center justify-center gap-2 px-7 py-3.5 text-xs font-medium uppercase tracking-[0.2em] ' +
-  'rounded-sm transition-all duration-300 ease-out cursor-pointer select-none ' +
+  'rounded-sm transition-all duration-500 ease-out cursor-pointer select-none ' +
   'focus:outline-none focus-visible:ring-2 focus-visible:ring-gold/60 focus-visible:ring-offset-2'
 
 const variants: Record<string, string> = {

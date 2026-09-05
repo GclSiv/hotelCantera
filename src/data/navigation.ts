@@ -10,6 +10,7 @@ export const navLinks: NavLink[] = [
   { label: 'Inicio', href: '#inicio' },
   { label: 'El Hotel', href: '#el-hotel' },
   { label: 'Habitaciones', href: '#habitaciones' },
+  { label: 'Paquetes', href: '#paquetes' },
   { label: 'Experiencias', href: '#experiencias' },
   { label: 'Galería', href: '#galeria' },
   { label: 'Ubicación', href: '#ubicacion' },

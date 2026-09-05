@@ -1,10 +1,20 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { ref, computed } from 'vue'
 import { hotelConfig } from '@/data/hotel'
 import { navLinks } from '@/data/navigation'
+import BaseButton from '@/components/ui/BaseButton.vue'
 import logoWhite from '@/assets/images/brand/logo-white.png'
 
 const year = new Date().getFullYear()
+
+// Newsletter (sitio estático): abre el cliente de correo con el mensaje prellenado.
+const email = ref('')
+function subscribe() {
+  const body = `Deseo suscribirme al boletín con el correo: ${email.value}`
+  window.location.href = `mailto:${hotelConfig.contact.email}?subject=${encodeURIComponent(
+    'Suscripción al boletín',
+  )}&body=${encodeURIComponent(body)}`
+}
 
 // Redes sociales: convertimos el objeto social en una lista renderizable.
 const socials = computed(() =>
@@ -29,6 +39,24 @@ const socialPaths: Record<string, string> = {
 <template>
   <footer id="contacto" class="bg-obsidian text-cream/70">
     <div class="mx-auto max-w-7xl px-6 py-16 lg:px-10 lg:py-20">
+      <!-- Newsletter -->
+      <div class="mb-14 flex flex-col gap-6 border-b border-cream/10 pb-12 lg:flex-row lg:items-end lg:justify-between">
+        <div>
+          <h3 class="font-display text-3xl font-medium text-cream sm:text-4xl">Recibe nuestras novedades</h3>
+          <p class="mt-2 max-w-md text-sm text-cream/60">Ofertas y experiencias de Oaxaca, directo a tu correo.</p>
+        </div>
+        <form class="flex w-full max-w-md items-end gap-3" @submit.prevent="subscribe">
+          <input
+            v-model="email"
+            type="email"
+            required
+            placeholder="Tu correo electrónico"
+            class="flex-1 border-b border-cream/30 bg-transparent py-2 text-sm text-cream outline-none transition-colors focus:border-gold placeholder:text-cream/40"
+          />
+          <BaseButton type="submit" variant="primary">Suscribirme</BaseButton>
+        </form>
+      </div>
+
       <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-4">
         <!-- Col 1: Hotel -->
         <div>
